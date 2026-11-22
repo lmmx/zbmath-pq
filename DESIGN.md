@@ -70,7 +70,9 @@ and a `source` provenance column (`kg-2026` or `oai-YYYY-MM-DD`).
 1. **`kg`, the Zenodo dump** (first). `download` (wikidata-pq's resumable range
    downloader and its md5 check, the checksum from the Zenodo API) → the gzip decoder
    backend (`rapidgzip` now, upigz once ready; see "Decisions"):
-   `rapidgzip` decodes the whole tarball in 14 s on 4 cores, against 55 s for `gzip` →
+   rapidgzip decodes the whole tarball in 12.8 s on 1 thread (12.8 CPU s; 10.8 s and
+   38 CPU s on 4), against 55 s for `gzip`; the default is 1 thread
+   (`docs/journal/2026-11-22-gzip-decoder-backend.md`) →
    `tarfile` in stream mode → a chunker cutting each member at subject-block boundaries
    (a blank line outside a `"""` literal), each chunk carrying the member's `@prefix`
    header → a pool of threads running the Rust kernel → Arrow → Parquet.
