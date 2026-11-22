@@ -1,0 +1,6 @@
+# Local data and builds (CLAUDE.md: full ingestion runs locally)
+/data/
+/releases/
+/target/
+.venv/
+__pycache__/

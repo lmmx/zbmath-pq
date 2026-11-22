@@ -1,0 +1,16 @@
+out-ttl-v2/out-7-v2.ttl: 1.16 GB, 19.0M triples, 47s (25 MB/s); total 47s
+out-ttl-v2/out-402-v2.ttl: 1.21 GB, 20.9M triples, 54s (22 MB/s); total 102s
+out-ttl-v2/out-1-v2.ttl: 1.44 GB, 22.9M triples, 60s (24 MB/s); total 161s
+out-ttl-v2/out-403-v2.ttl: 0.82 GB, 14.1M triples, 40s (21 MB/s); total 201s
+out-ttl-v2/out-404-v2.ttl: 1.19 GB, 20.4M triples, 57s (21 MB/s); total 258s
+out-ttl-v2/out-5-v2.ttl: 0.20 GB, 3.5M triples, 9s (23 MB/s); total 267s
+out-ttl-v2/out-3-v2.ttl: 0.58 GB, 9.6M triples, 30s (20 MB/s); total 296s
+out-ttl-v2/out-6-v2.ttl: 1.74 GB, 30.4M triples, 84s (21 MB/s); total 380s
+out-ttl-v2/out-2-v2.ttl: 0.43 GB, 8.0M triples, 23s (19 MB/s); total 403s
+out-ttl-v2/out-8-v2.ttl: 0.75 GB, 14.1M triples, 40s (19 MB/s); total 442s
+out-ttl-v2/out-401-v2.ttl: 1.25 GB, 21.5M triples, 70s (18 MB/s); total 513s
+done 532s; docs=4070393 reviews=3098767 docs-with-title-in->1-file=0
+
+real	8m56.391s
+user	9m24.810s
+sys	0m21.690s

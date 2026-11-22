@@ -1,0 +1,49 @@
+name: Attribution
+
+# CLAUDE.md, "Attribution": every commit a PR adds is authored and committed by the user,
+# and no commit message or PR body carries AI attribution.
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+permissions:
+  contents: read
+
+jobs:
+  attribution:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Commits
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          set -euo pipefail
+          expected="Louis Maddox <louismmx@gmail.com>"
+          bad=0
+          for c in $(git rev-list "$BASE..$HEAD"); do
+            author=$(git show -s --format='%an <%ae>' "$c")
+            committer=$(git show -s --format='%cn <%ce>' "$c")
+            if [ "$author" != "$expected" ] || [ "$committer" != "$expected" ]; then
+              echo "::error::$c: author '$author', committer '$committer' (expected $expected)"
+              bad=1
+            fi
+            if git show -s --format='%B' "$c" | grep -qiE 'co-authored-by:.*(claude|anthropic|openai|copilot|gpt|gemini)|generated (with|by) .*claude|claude\.ai/code|claude-session:|noreply@anthropic\.com'; then
+              echo "::error::$c: AI attribution in the commit message"
+              bad=1
+            fi
+          done
+          exit $bad
+      - name: PR body
+        env:
+          BODY: ${{ github.event.pull_request.body }}
+          TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          if printf '%s\n%s\n' "$TITLE" "$BODY" | grep -qiE 'generated (with|by) .*claude|claude\.ai/code|🤖|co-authored-by:.*(claude|anthropic)'; then
+            echo "::error::AI attribution in the PR title or body"
+            exit 1
+          fi
