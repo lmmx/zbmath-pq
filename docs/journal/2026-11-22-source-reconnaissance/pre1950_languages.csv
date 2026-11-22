@@ -1,0 +1,228 @@
+lang,documents,review_text
+English,86115,43251
+German,82468,52028
+French,65205,39708
+Italian,29530,18781
+Russian,9458,4478
+Dutch,5429,3629
+Spanish,3392,1416
+Czech,2487,1707
+zbMATH Open Web Interface contents unavailable due to conflicting licenses.,1726,197
+Danish,1457,1034
+Swedish,1230,805
+Romanian,1195,483
+Polish,1188,818
+Hungarian,920,487
+Norwegian,638,351
+Ukrainian,625,305
+,571,432
+Latin,412,130
+Japanese,397,201
+Portuguese,335,210
+Greek,248,123
+Serbian,197,115
+Bulgarian,188,121
+English Japanese,186,160
+Croatian,117,55
+Finnish,96,54
+Russian German,83,54
+Russian French,74,50
+Georgian,56,23
+Czech French,43,37
+Russian English,34,26
+Flemish,33,14
+Latvian,33,27
+German French,32,8
+Serbo-Croatian,26,13
+German Russian,23,20
+Hebrew,22,4
+English French,20,2
+Czech German,16,11
+Georgian Russian,15,8
+Slovak,15,9
+English Dutch,15,10
+French Russian,14,12
+French German,13,8
+Latin German,13,5
+Esperanto,12,4
+Serbian French,12,12
+French English,11,4
+German English,8,6
+Russian Lithuanian,7,0
+Arabic,6,1
+English German,6,4
+German Dutch,6,3
+Dutch French,6,0
+French Dutch,5,0
+Polish German,5,4
+Ukrainian French,5,4
+Ukrainian German,5,4
+Dutch English,4,0
+Hungarian German,4,4
+Greek Latin,4,4
+Sanskrit,4,1
+German Hungarian,4,4
+Ukrainian Russian,3,1
+German Polish,3,3
+Chinese,3,0
+English Dutch French,3,0
+French Dutch English,3,0
+French Ukrainian,3,2
+German Arabic,3,3
+Interlingua,3,3
+Czech French English,3,3
+Dutch German,3,3
+German Italian,3,3
+Dutch Norwegian,3,0
+Italian Russian,2,2
+Greek German,2,1
+English Russian,2,1
+English Spanish,2,0
+French Swedish,2,0
+Italian German,2,1
+Swedish German,2,0
+Norwegian English,2,0
+Latin French,2,0
+French Latin,2,1
+Estonian,2,2
+Ukrainian English,2,2
+French Japanese,2,2
+German Latin,2,2
+French Czech,2,2
+Serbo-Croatian French,2,2
+French Serbo-Croatian,2,2
+Swedish French,2,2
+Catalan,2,0
+Turkish,2,0
+English Greek,2,2
+Dutch English Italian,2,0
+Romanian Russian German,2,0
+Swedish French English Dutch Norwegian German,1,0
+German Dutch French English,1,0
+Danish French,1,0
+Dutch Norwegian German,1,0
+English Dutch Italian Swedish German,1,0
+German Norwegian Dutch English,1,0
+Spanish English,1,0
+Dutch English French Italian,1,0
+German French Dutch Norwegian Danish Italian English,1,0
+German English French Italian,1,0
+Dutch English Italian Romanian,1,0
+German Italian English Spanish Swedish Dutch French,1,0
+English Dutch Italian Spanish French Norwegian German,1,0
+French English Romanian,1,0
+Croatian French,1,1
+French Dutch English Spanish German,1,0
+English Italian German,1,0
+Dutch Swedish Spanish,1,0
+English French Spanish Dutch,1,0
+German Norwegian Danish Dutch English French Italian,1,0
+German Norwegian French,1,1
+Dutch Spanish,1,0
+English Dutch Italian Spanish Danish,1,0
+German Dutch French,1,0
+Dutch French Italian Spanish German,1,0
+English Romanian Dutch Spanish French,1,0
+Greek English Romanian Dutch French Italian Spanish Danish German,1,0
+German English Italian French,1,0
+Slovenian,1,0
+French Polish,1,1
+German French Italian English,1,1
+French Dutch English Italian Spanish German,1,0
+Portuguese German,1,1
+Arabic English,1,1
+French Serbian,1,0
+English Dutch German,1,0
+Swedish Spanish,1,0
+German Czech,1,1
+French English Italian Spanish,1,0
+French Romanian,1,0
+Arabic Spanish,1,0
+English Romanian Dutch Italian,1,0
+French Portuguese,1,1
+Norwegian Dutch English French Italian,1,0
+Hebrew Arabic German,1,0
+French English Dutch Italian Danish German,1,0
+Arabic French,1,0
+German French Dutch,1,0
+Latin English,1,1
+English French German,1,0
+Norwegian German,1,1
+German Latin French,1,0
+Macedonian,1,0
+Latin Hungarian,1,1
+Latin Arabic,1,0
+Romanian Dutch Italian Spanish German,1,0
+French Spanish English Dutch,1,0
+Dutch Romanian English French Italian Spanish Danish German,1,0
+Russian French German,1,0
+German Norwegian,1,0
+Italian Latin,1,1
+Romanian Dutch English French English Spanish German,1,0
+German Spanish,1,0
+French Spanish,1,0
+German Norwegian English French Italian,1,0
+Greek French,1,0
+Greek English Spanish Romanian French German,1,0
+Greek Dutch Spanish,1,0
+Swedish Dutch English Norwegian German,1,0
+Italian French,1,0
+German French Spanish Dutch English,1,0
+Dutch Italian,1,0
+Dutch English Italian French German,1,0
+Romanian Swedish English Dutch Italian Spanish German,1,0
+Dutch English French,1,0
+Danish German,1,1
+German Italian French Spanish Dutch English,1,0
+Portuguese French,1,1
+Romanian French English German,1,0
+Dutch Romanian English,1,0
+German Croatian,1,1
+Swedish Romanian English Dutch Spanish Norwegian German,1,0
+French Bulgarian,1,1
+Slovak French,1,0
+French Norwegian,1,1
+Romanian French English Dutch Italian German,1,0
+French Spanish Dutch,1,0
+German French English,1,1
+Dutch Romanian French German,1,0
+Italian Hebrew,1,1
+Italian Dutch French English Spanish Norwegian,1,0
+French Swedish Dutch Romanian,1,0
+Swedish Romanian French,1,0
+Hebrew English,1,1
+German English Spanish French Dutch,1,0
+English Swedish Dutch French Spanish,1,0
+Spanish Swedish Dutch,1,0
+Dutch Romanian French,1,0
+German Spanish Dutch,1,0
+Dutch French English,1,0
+Swedish Dutch,1,0
+French English Italian Spanish German,1,0
+Romanian English,1,0
+English French Dutch,1,0
+German French Dutch Norwegian English,1,0
+German English French,1,0
+English French Spanish Romanian,1,0
+Czech Croatian Bulgarian,1,1
+English French Italian Spanish Norwegian,1,0
+German Dutch English French Italian,1,0
+Japanese English,1,0
+German Italian French English Dutch,1,0
+Spanish German,1,0
+German Dutch Norwegian French English,1,0
+French English German,1,0
+English Romanian Dutch Spanish Danish Norwegian,1,0
+Norwegian French,1,1
+Russian Ukrainian,1,1
+Swedish Dutch French Norwegian German,1,0
+English Latin,1,1
+Swedish Dutch Italian,1,0
+Greek French Romanian English Dutch Italian Danish German,1,0
+Bulgarian French,1,1
+Dutch English French Italian Spanish Norwegian German,1,0
+Polish French,1,1
+Slovak German,1,1
+French Dutch Danish Norwegian,1,0
+English French Spanish Danish German,1,0
+Sanskrit Italian English,1,1
