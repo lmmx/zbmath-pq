@@ -68,8 +68,9 @@ it. Each adapter emits the same Arrow tables, with null where its source lacks a
 and a `source` provenance column (`kg-2026` or `oai-YYYY-MM-DD`).
 
 1. **`kg`, the Zenodo dump** (first). `download` (wikidata-pq's resumable range
-   downloader and its md5 check, the checksum from the Zenodo API) → `rapidgzip`
-   (parallel gzip; 14 s for the whole tarball on 4 cores, against 55 s for `gzip`) →
+   downloader and its md5 check, the checksum from the Zenodo API) → the gzip decoder
+   backend (`rapidgzip` now, upigz once ready; see "Decisions"):
+   `rapidgzip` decodes the whole tarball in 14 s on 4 cores, against 55 s for `gzip` →
    `tarfile` in stream mode → a chunker cutting each member at subject-block boundaries
    (a blank line outside a `"""` literal), each chunk carrying the member's `@prefix`
    header → a pool of threads running the Rust kernel → Arrow → Parquet.
@@ -168,4 +169,10 @@ just publish             # Hub upload: only with the user's go-ahead
 
 ## Decisions
 
-(none yet)
+- **2026-11-22: the gzip decoder is the user's own (working name upigz), hill-climbed
+  for speed in its own project.** The `kg` adapter's decode stage sits behind a decoder
+  backend, as wikidata-pq's does (`dump.py` `DECODERS` and the in-process `Bz2Decoder`
+  behind `WIKIDATA_BZ2_DECODER`): `rapidgzip` until upigz is ready, then upigz, with
+  byte parity between them checked. The zbMATH tarball is one of upigz's benchmark
+  inputs; its measured baselines on the 4-core session machine are `gzip -dc` 55.3 s and
+  `rapidgzip -P 4` 13.9 s wall, 41 s CPU (`docs/journal/2026-11-22-source-reconnaissance.md`).
